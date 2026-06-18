@@ -5,9 +5,9 @@
 
 I used from the Multisim live website (1). This pulse generator circuit uses a 555-timer configured as an astable oscillator to generate a pulse signal. Pins 2 and 6 are connected, allowing the timer to continuously trigger itself and operate as a free-running oscillator. During operation, the capacitor C1 charges through resistors R1, R2, and R3 until the voltage reaches approximately 2/3 of the supply voltage. This switches the output state of the internal comparators, and the capacitor begins to discharge through R2 through the discharge pin (pin 7) (2). When the capacitor voltage falls to approximately 1/3 Vcc, the timer switches again and the capacitor begins charging again. This repeated charging and discharging cycle produces a pulse waveform at the output, which is seen on the oscilloscope in image above (2). The LED is used to visually show the output state changing. I then added a preset resistor (3) to be able to change the width of the impulse signal, to increase or decrease the frequency of the impulses.
 
-(1) 555-timer multisim live circuit - https://www.multisim.com/content/mqyrwJnai3YXxheMHwvpdf/ic-555using-pulse-generator/ 
-(2) Electronics tutorial on 555-timers - https://www.electronics-tutorials.ws/waveforms/555_oscillator.html
-(3) Potentiometer Pinout - https://www.jotrin.com/technology/details/potentiometer-pinout-symbol-wiring-and-working
+- (1) 555-timer multisim live circuit - https://www.multisim.com/content/mqyrwJnai3YXxheMHwvpdf/ic-555using-pulse-generator/ 
+- (2) Electronics tutorial on 555-timers - https://www.electronics-tutorials.ws/waveforms/555_oscillator.html
+- (3) Potentiometer Pinout - https://www.jotrin.com/technology/details/potentiometer-pinout-symbol-wiring-and-working
 
 ---
 ## Op-Amp Simulation
@@ -15,8 +15,8 @@ I used from the Multisim live website (1). This pulse generator circuit uses a 5
 
 The image above shows the simulation uses a TL071 OpAmp (1) that works by comparing the voltages at the inverting (−) and non-inverting (+) inputs. When the voltage at the non-inverting input becomes greater than the voltage at the inverting input, the output switches to a high voltage close to the positive supply. When the voltage at the inverting input becomes greater, the output switches to a low voltage close to the negative supply. This switching behaviour causes the output to alternate above and below zero creating the square wave signal shown on the oscilloscope. (2)
 
-(1) TL071CP datasheet - https://www.ti.com/lit/ds/symlink/tl071.pdf
-(2) Electronics tutorial on comparators - https://www.electronics-tutorials.ws/opamp/op-amp-comparator.html 
+- (1) TL071CP datasheet - https://www.ti.com/lit/ds/symlink/tl071.pdf
+- (2) Electronics tutorial on comparators - https://www.electronics-tutorials.ws/opamp/op-amp-comparator.html 
 
 ---
 ## Combined Trigger circuit Simulation
@@ -32,8 +32,8 @@ The image above shows the simulation of the combined 555 timer impulse circuit a
 
 The image above shows the circuit was built on a breadboard based on the design from the Multisim Live page. The circuit was first constructed without the preset resistor to confirm that the 555 timer was operating correctly and producing the expected square wave output.the 10kΩ preset resistor (2) is set to 50% resistance. The oscilloscope shows that the pulse width has increase, demonstrating that the timing characteristics of the circuit can be adjusted.
 
-(1) 555-timer multisim live circuit - https://www.multisim.com/content/mqyrwJnai3YXxheMHwvpdf/ic-555using-pulse-generator/
-(2) Potentiometer Pinout - https://www.jotrin.com/technology/details/potentiometer-pinout-symbol-wiring-and-working
+- (1) 555-timer multisim live circuit - https://www.multisim.com/content/mqyrwJnai3YXxheMHwvpdf/ic-555using-pulse-generator/
+- (2) Potentiometer Pinout - https://www.jotrin.com/technology/details/potentiometer-pinout-symbol-wiring-and-working
 
 ---
 ## Op-Amp test
