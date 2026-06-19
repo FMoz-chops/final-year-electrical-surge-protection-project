@@ -1,4 +1,4 @@
-## Problem Statement
+## Project aims
 
 Electrical systems in industrial and commercial settings are relying more on sensitive electronics that are vulnerable to Transient Voltage events also referred to as electrical surges. Transient voltage events are short bursts of high electrical energy that can interfere with or damage systems, mainly caused by power switching, wiring faults, and external events like lightning strikes. When subjected to these electrical surges, sensitive electronics can fail or suffer permanent damage, causing loss of data, damage to expensive equipment, and a potential safety risk to users. 
 Existing SPDs are primarily designed to limit the transient energy from reaching the system by diverting the energy away from the sensitive electronics. However, SPDs have a finite lifespan and over time their protection threshold can deteriorate allowing transient energy through and damaging the system. The lack of knowledge on SPDs, combined with the current methods not always being effective to protect the evolving electronics needed in industry and commercial use, highlights the importance of SPD improvement.
