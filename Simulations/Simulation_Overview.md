@@ -1,4 +1,4 @@
-## Comaparator Simulation
+## Comparator Simulation
 ![Comparator Simulation](<img width="625" height="326" alt="image" src="https://github.com/user-attachments/assets/86264716-e274-4da0-8852-600e8d62e75b" />)
 
 The comparator compares the Input voltage(pin2) and Reference voltage(pin3). When the Input < Reference the comparator output is pulled HIGH by the pull up resistor. Similiarly, when Input > Reference the comparator output is LOW.
