@@ -20,6 +20,15 @@ The project aim is to create a Surge Protection Device to help protect sensitive
 
 
 ---
+## Results
+
+The experimental testing of the surge protection circuit demonstrated that the system operated according to the intended design. The rectifier stage successfully converted the simulated AC input signal into a DC voltage suitable for the scaling stage. Measurements taken using a digital multimeter showed that the output of the bridge rectifier was approximately 8.34 V, confirming that the rectifier and smoothing capacitor were functioning correctly.
+
+The voltage divider stage successfully reduced the rectified voltage to a lower level that could be safely compared by the comparator. Using resistor values of 10kΩ and 4.7kΩ, the measured output of the voltage divider was approximately 2.6 V, which matched the designed threshold voltage for the comparator reference input. 
+
+During testing, the comparator was able to detect when the input voltage exceeded the reference voltage. When the input voltage was less than the reference voltage (Vin < Vref), the comparator output was HIGH using a pull-up resistor, the MOSFET remained ON, allowing the relay coil to become energised and power the protected circuit. When the input voltage exceeded the reference voltage (Vin > Vref), the comparator output changed state, causing the MOSFET to switch and de-energise the relay, isolating the protected circuit from the supply. Overall, the experimental results confirm that the circuit successfully detects over-voltage conditions and automatically isolates the load using the relay switching stage. This demonstrates that the proposed protection circuit can protect sensitive electronics from potentially damaging voltage surges.
+
+---
 ## Conclusion
 
 The project achieved the main objectives that were outlined at the start of the report. Research into existing surge protection methods helped identify the main design requirements needed to develop a similar protection circuit. Using this information, a circuit was designed using CAD software, simulated to check its behaviour, and then built and tested in the laboratory. The testing showed that the comparator was able to detect when the input voltage exceeded the reference voltage, while the MOSFET and relay switching stage disconnected the protected circuit during these conditions. The laboratory testing also showed behaviour that was very similar to what was observed in the simulation. Overall, the project shows that a simple and low-cost design can provide effective protection, with scope for further improvements and real-world use.
